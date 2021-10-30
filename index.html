@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html style="font: bold 16px cascadia code">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>#DesiPiyush</title>
+  <link rel="stylesheet" href="-.css">
+
+  <link rel="icon" href="pump.png">
+
+</head>
+
+<body>
+  <style>
+    ::-webkit-scrollbar {
+    width     : 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background        : linear-gradient(to bottom, #ff2ae0, #645bf6);
+    border-radius     : 20px
+}
+body {
+    background-color     : #0dfcc8;
+    display              : flex;
+    justify-content      : center;
+    align-items          : center;
+    min-height           : 100vh;
+}
+
+#card {
+    perspective     : 2000px;
+    position        : relative;
+    width           : 300px;
+    height          : 400px;
+}
+
+.img {
+    border-radius        : 20px;
+    box-shadow           : 0 25px 50px rgba(0, 0, 0, 0.15);
+    border               : 1px solid #000;
+    transform-origin     : left;
+    z-index              : 10;
+    transition           : 1s;
+    cursor               : pointer;
+    display              : flex;
+    justify-content      : center;
+    align-items          : center;
+    height               : 400px;
+    position             : absolute;
+    width                : 300px;
+}
+
+.img:nth-child(1) {
+    z-index              : 9;
+    background-color     : green;
+}
+
+.img:nth-child(2) {
+    z-index              : 8;
+    background-color     : pink;
+}
+
+.img:nth-child(3) {
+    z-index        : 7;
+    background     : red;
+}
+
+.img:nth-child(4) {
+    z-index        : 6;
+    background     : blue;
+}
+
+.img:nth-child(5) {
+    z-index        : 5;
+    background     : rgb(0, 217, 255);
+
+}
+
+
+
+
+.mg1 {
+    transform     : rotateY(-135deg);
+    color         : green;
+}
+
+.mg2 {
+    transform     : rotateY(-140deg);
+    color         : pink;
+}
+
+.mg3 {
+    transform     : rotateY(-145deg);
+    color         : red;
+}
+
+.mg4 {
+    transform     : rotateY(-150deg);
+    color         : blue;
+}
+
+.mg5 {
+    transform     : rotateY(-158deg);
+    color         : rgb(0, 217, 255);
+}
+  </style>
+  <audio id="xad" src="Miss You Love - Patiño.mp3"></audio>
+
+  <div class="container">
+    <div id="card" class="card">
+      <div id="img1" class="img">
+        <p>monera</p>
+      </div>
+      <div id="img2" class="img">
+        <p>protista</p>
+      </div>
+      <div id="img3" class="img">
+        <p>fungi</p>
+      </div>
+      <div id="img4" class="img">
+        <p>planate</p>
+      </div>
+      <div id="img5" class="img">
+        <p>animalia</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var mg1 = document.getElementById( "img1" );
+var mg2 = document.getElementById( "img2" );
+var mg3 = document.getElementById( "img3" );
+var mg4 = document.getElementById( "img4" );
+var mg5 = document.getElementById( "img5" );
+
+mg1.onclick = first;
+mg2.onclick = second;
+mg3.onclick = third;
+mg4.onclick = four;
+mg5.onclick = five;
+
+
+function first()
+{
+    mg1.classList.toggle( "mg1" );
+}
+
+function second()
+{
+    mg2.classList.toggle( "mg2" );
+}
+
+function third()
+{
+    mg3.classList.toggle( "mg3" );
+}
+
+function four()
+{
+    mg4.classList.toggle( "mg4" );
+}
+
+function five()
+{
+    mg5.classList.toggle( "mg5" );
+}
+xad.play();
+xad.loop = true;
+  </script>
+</body>
+
+</html>
